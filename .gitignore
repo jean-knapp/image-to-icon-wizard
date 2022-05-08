@@ -396,3 +396,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+windows-icon-maker/Installer/installer-cache/*
+windows-icon-maker/Installer/installer-SetupFiles/*
