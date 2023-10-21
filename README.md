@@ -4,7 +4,7 @@
 </h1>
 
 
-This powerful tool is designed to simplify the process of converting a single image file into a fully-fledged Windows Icon (.ico) file. An icon file is a versatile container that holds multiple sizes of the same image, allowing your application or website to display the appropriate resolution icon based on the context.
+This powerful tool is designed to simplify the process of converting a single image file into a fully-fledged Windows Icon (.ico) file, or into Android Mipmap files. An icon file is a versatile container that holds multiple sizes of the same image, allowing your application or website to display the appropriate resolution icon based on the context.
 
 With this wizard, you no longer need to manually resize your image or worry about choosing the best anti-aliasing technique. The conversion process intelligently handles all the necessary scaling and anti-aliasing for you, ensuring that your icon looks crisp and professional across various screen resolutions and sizes.
 
