@@ -33,6 +33,8 @@
             this.wizardControl1 = new DevExpress.XtraWizard.WizardControl();
             this.welcomeWizardPage1 = new DevExpress.XtraWizard.WelcomeWizardPage();
             this.wizardPage1 = new DevExpress.XtraWizard.WizardPage();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.outputSelection = new DevExpress.XtraEditors.RadioGroup();
             this.sourceFileBrowseButton = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.sourceFileEdit = new DevExpress.XtraEditors.TextEdit();
@@ -56,11 +58,28 @@
             this.picture32 = new DevExpress.XtraEditors.PictureEdit();
             this.picture24 = new DevExpress.XtraEditors.PictureEdit();
             this.picture16 = new DevExpress.XtraEditors.PictureEdit();
+            this.wizardPage3 = new DevExpress.XtraWizard.WizardPage();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.picture64_2 = new DevExpress.XtraEditors.PictureEdit();
+            this.picture192 = new DevExpress.XtraEditors.PictureEdit();
+            this.picture144 = new DevExpress.XtraEditors.PictureEdit();
+            this.picture96_2 = new DevExpress.XtraEditors.PictureEdit();
+            this.picture48_2 = new DevExpress.XtraEditors.PictureEdit();
+            this.picture36 = new DevExpress.XtraEditors.PictureEdit();
+            this.picture72 = new DevExpress.XtraEditors.PictureEdit();
             this.openSourceImageDialog = new DevExpress.XtraEditors.XtraOpenFileDialog(this.components);
             this.saveIconDialog = new DevExpress.XtraEditors.XtraSaveFileDialog(this.components);
+            this.saveMipmapDialog = new DevExpress.XtraEditors.XtraFolderBrowserDialog(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.wizardControl1)).BeginInit();
             this.wizardControl1.SuspendLayout();
             this.wizardPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.outputSelection.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sourceFileEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sourceFilePicture.Properties)).BeginInit();
             this.completionWizardPage1.SuspendLayout();
@@ -74,6 +93,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture32.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture24.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture16.Properties)).BeginInit();
+            this.wizardPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture64_2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture192.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture144.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture96_2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture48_2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture36.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture72.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // wizardControl1
@@ -82,6 +109,7 @@
             this.wizardControl1.Controls.Add(this.wizardPage1);
             this.wizardControl1.Controls.Add(this.completionWizardPage1);
             this.wizardControl1.Controls.Add(this.wizardPage2);
+            this.wizardControl1.Controls.Add(this.wizardPage3);
             this.wizardControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.wizardControl1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("wizardControl1.ImageOptions.Image")));
             this.wizardControl1.Name = "wizardControl1";
@@ -89,11 +117,14 @@
             this.welcomeWizardPage1,
             this.wizardPage1,
             this.wizardPage2,
+            this.wizardPage3,
             this.completionWizardPage1});
             this.wizardControl1.Size = new System.Drawing.Size(677, 432);
             this.wizardControl1.Text = "Image-to-Icon Wizard";
             this.wizardControl1.CancelClick += new System.ComponentModel.CancelEventHandler(this.wizardControl1_CancelClick);
             this.wizardControl1.FinishClick += new System.ComponentModel.CancelEventHandler(this.wizardControl1_FinishClick);
+            this.wizardControl1.NextClick += new DevExpress.XtraWizard.WizardCommandButtonClickEventHandler(this.wizardControl1_NextClick);
+            this.wizardControl1.PrevClick += new DevExpress.XtraWizard.WizardCommandButtonClickEventHandler(this.wizardControl1_PrevClick);
             // 
             // welcomeWizardPage1
             // 
@@ -105,6 +136,8 @@
             // wizardPage1
             // 
             this.wizardPage1.AllowNext = false;
+            this.wizardPage1.Controls.Add(this.labelControl10);
+            this.wizardPage1.Controls.Add(this.outputSelection);
             this.wizardPage1.Controls.Add(this.sourceFileBrowseButton);
             this.wizardPage1.Controls.Add(this.labelControl1);
             this.wizardPage1.Controls.Add(this.sourceFileEdit);
@@ -114,6 +147,28 @@
             this.wizardPage1.Name = "wizardPage1";
             this.wizardPage1.Size = new System.Drawing.Size(645, 289);
             this.wizardPage1.Text = "Source image";
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Location = new System.Drawing.Point(3, 78);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(34, 13);
+            this.labelControl10.TabIndex = 5;
+            this.labelControl10.Text = "Output";
+            // 
+            // outputSelection
+            // 
+            this.outputSelection.EditValue = "ico";
+            this.outputSelection.Location = new System.Drawing.Point(3, 97);
+            this.outputSelection.Name = "outputSelection";
+            this.outputSelection.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.outputSelection.Properties.Appearance.Options.UseBackColor = true;
+            this.outputSelection.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.outputSelection.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("ico", "Windows Icon (*ico)"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem("mipmap", "Android Mipmaps")});
+            this.outputSelection.Size = new System.Drawing.Size(217, 56);
+            this.outputSelection.TabIndex = 4;
             // 
             // sourceFileBrowseButton
             // 
@@ -329,6 +384,147 @@
             this.picture16.Size = new System.Drawing.Size(16, 16);
             this.picture16.TabIndex = 0;
             // 
+            // wizardPage3
+            // 
+            this.wizardPage3.Controls.Add(this.labelControl11);
+            this.wizardPage3.Controls.Add(this.labelControl12);
+            this.wizardPage3.Controls.Add(this.labelControl13);
+            this.wizardPage3.Controls.Add(this.labelControl14);
+            this.wizardPage3.Controls.Add(this.labelControl15);
+            this.wizardPage3.Controls.Add(this.labelControl16);
+            this.wizardPage3.Controls.Add(this.labelControl18);
+            this.wizardPage3.Controls.Add(this.picture64_2);
+            this.wizardPage3.Controls.Add(this.picture192);
+            this.wizardPage3.Controls.Add(this.picture144);
+            this.wizardPage3.Controls.Add(this.picture96_2);
+            this.wizardPage3.Controls.Add(this.picture48_2);
+            this.wizardPage3.Controls.Add(this.picture36);
+            this.wizardPage3.Controls.Add(this.picture72);
+            this.wizardPage3.DescriptionText = "Your icon, with different sizes, should look like the ones below. If you are sati" +
+    "sfied, click Next. If not, click Back and replace the Source File.";
+            this.wizardPage3.Name = "wizardPage3";
+            this.wizardPage3.Size = new System.Drawing.Size(645, 289);
+            this.wizardPage3.Text = "Icon Preview";
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Location = new System.Drawing.Point(412, 210);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(42, 13);
+            this.labelControl11.TabIndex = 32;
+            this.labelControl11.Text = "192x192";
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Location = new System.Drawing.Point(232, 270);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(42, 13);
+            this.labelControl12.TabIndex = 31;
+            this.labelControl12.Text = "144x144";
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Location = new System.Drawing.Point(100, 222);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(30, 13);
+            this.labelControl13.TabIndex = 30;
+            this.labelControl13.Text = "96x96";
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Location = new System.Drawing.Point(204, 82);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(30, 13);
+            this.labelControl14.TabIndex = 29;
+            this.labelControl14.Text = "64x64";
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Location = new System.Drawing.Point(120, 66);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(30, 13);
+            this.labelControl15.TabIndex = 28;
+            this.labelControl15.Text = "48x48";
+            // 
+            // labelControl16
+            // 
+            this.labelControl16.Location = new System.Drawing.Point(48, 54);
+            this.labelControl16.Name = "labelControl16";
+            this.labelControl16.Size = new System.Drawing.Size(30, 13);
+            this.labelControl16.TabIndex = 27;
+            this.labelControl16.Text = "36x36";
+            // 
+            // labelControl18
+            // 
+            this.labelControl18.Location = new System.Drawing.Point(304, 90);
+            this.labelControl18.Name = "labelControl18";
+            this.labelControl18.Size = new System.Drawing.Size(30, 13);
+            this.labelControl18.TabIndex = 25;
+            this.labelControl18.Text = "72x72";
+            // 
+            // picture64_2
+            // 
+            this.picture64_2.Location = new System.Drawing.Point(204, 12);
+            this.picture64_2.Name = "picture64_2";
+            this.picture64_2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picture64_2.Properties.ShowMenu = false;
+            this.picture64_2.Size = new System.Drawing.Size(64, 64);
+            this.picture64_2.TabIndex = 24;
+            // 
+            // picture192
+            // 
+            this.picture192.Location = new System.Drawing.Point(412, 12);
+            this.picture192.Name = "picture192";
+            this.picture192.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picture192.Properties.ShowMenu = false;
+            this.picture192.Size = new System.Drawing.Size(192, 192);
+            this.picture192.TabIndex = 23;
+            // 
+            // picture144
+            // 
+            this.picture144.Location = new System.Drawing.Point(232, 120);
+            this.picture144.Name = "picture144";
+            this.picture144.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picture144.Properties.ShowMenu = false;
+            this.picture144.Size = new System.Drawing.Size(144, 144);
+            this.picture144.TabIndex = 22;
+            // 
+            // picture96_2
+            // 
+            this.picture96_2.Location = new System.Drawing.Point(100, 120);
+            this.picture96_2.Name = "picture96_2";
+            this.picture96_2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picture96_2.Properties.ShowMenu = false;
+            this.picture96_2.Size = new System.Drawing.Size(96, 96);
+            this.picture96_2.TabIndex = 21;
+            // 
+            // picture48_2
+            // 
+            this.picture48_2.Location = new System.Drawing.Point(120, 12);
+            this.picture48_2.Name = "picture48_2";
+            this.picture48_2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picture48_2.Properties.ShowMenu = false;
+            this.picture48_2.Size = new System.Drawing.Size(48, 48);
+            this.picture48_2.TabIndex = 20;
+            // 
+            // picture36
+            // 
+            this.picture36.Location = new System.Drawing.Point(48, 12);
+            this.picture36.Name = "picture36";
+            this.picture36.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picture36.Properties.ShowMenu = false;
+            this.picture36.Size = new System.Drawing.Size(36, 36);
+            this.picture36.TabIndex = 19;
+            // 
+            // picture72
+            // 
+            this.picture72.Location = new System.Drawing.Point(304, 12);
+            this.picture72.Name = "picture72";
+            this.picture72.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picture72.Properties.ShowMenu = false;
+            this.picture72.Size = new System.Drawing.Size(72, 72);
+            this.picture72.TabIndex = 17;
+            // 
             // openSourceImageDialog
             // 
             this.openSourceImageDialog.Filter = "Image Files|*.bmp;*.jpg;*.jpeg;*.png;*.gif;*.ico";
@@ -337,23 +533,24 @@
             // 
             this.saveIconDialog.Filter = "Icon Files (*.ico)|*.ico";
             // 
-            // WizardForm1
+            // WizardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 432);
             this.Controls.Add(this.wizardControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("WizardForm1.IconOptions.Image")));
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("WizardForm.IconOptions.Image")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "WizardForm1";
+            this.Name = "WizardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Image-to-Icon Wizard";
             ((System.ComponentModel.ISupportInitialize)(this.wizardControl1)).EndInit();
             this.wizardControl1.ResumeLayout(false);
             this.wizardPage1.ResumeLayout(false);
             this.wizardPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.outputSelection.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sourceFileEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sourceFilePicture.Properties)).EndInit();
             this.completionWizardPage1.ResumeLayout(false);
@@ -368,6 +565,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture32.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture24.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture16.Properties)).EndInit();
+            this.wizardPage3.ResumeLayout(false);
+            this.wizardPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture64_2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture192.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture144.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture96_2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture48_2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture36.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture72.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -402,5 +608,23 @@
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.PictureEdit iconPicture;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.RadioGroup outputSelection;
+        private DevExpress.XtraWizard.WizardPage wizardPage3;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.LabelControl labelControl13;
+        private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.LabelControl labelControl16;
+        private DevExpress.XtraEditors.LabelControl labelControl18;
+        private DevExpress.XtraEditors.PictureEdit picture64_2;
+        private DevExpress.XtraEditors.PictureEdit picture192;
+        private DevExpress.XtraEditors.PictureEdit picture144;
+        private DevExpress.XtraEditors.PictureEdit picture96_2;
+        private DevExpress.XtraEditors.PictureEdit picture48_2;
+        private DevExpress.XtraEditors.PictureEdit picture36;
+        private DevExpress.XtraEditors.PictureEdit picture72;
+        private DevExpress.XtraEditors.XtraFolderBrowserDialog saveMipmapDialog;
     }
 }

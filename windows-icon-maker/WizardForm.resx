@@ -117,16 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="welcomeWizardPage1.IntroductionText" xml:space="preserve">
-    <value>This powerful tool is designed to simplify the process of converting a single image file into a fully-fledged Windows Icon (.ico) file.
-
-The conversion process intelligently handles all the necessary scaling and anti-aliasing for you, ensuring that your icon looks crisp and professional across various screen resolutions and sizes.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="wizardControl1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAcAAAAOgCAIAAAAlLDFXAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAA/7JJREFUeF7s/XVUHUu394/ef+8Yvyu/O973nPec8+xnS3bclQQCcXf34B4IEoEQ
+        vAAADrwBlbxySQAA/7JJREFUeF7s/XVUHUu394/ef+8Yvyu/O973nPec8+xnS3bclQQCcXf34B4IEoEQ
         hwgRiLu7u7u7u4cohOAQHHI/VbXorCwIYROSLPbuHl/WaLpnV1fNmvWtOaurq/8fNZsP0qFDhw4dxYBO
         oDp06NBRTOgEqkOHDh3FhE6gOnTo0FFM6ASqQ4cOHcWETqA6dOjQUUzoBKpDhw4dxYROoDp06NBRTOgE
         qkOHDh3FhE6gOnTo0FFM6ASqQ4cOHcWETqA6dOjQUUzoBKpDhw4dxYROoDp06NBRTOgEqkOHDh3FhE6g
@@ -2293,21 +2288,29 @@ The conversion process intelligently handles all the necessary scaling and anti-
         4JcAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="welcomeWizardPage1.IntroductionText" xml:space="preserve">
+    <value>This powerful tool is designed to simplify the process of converting a single image file into a fully-fledged Windows Icon (.ico) file or Android Mipmaps.
+
+The conversion process intelligently handles all the necessary scaling and anti-aliasing for you, ensuring that your icon looks crisp and professional across various screen resolutions and sizes.</value>
+  </data>
   <metadata name="openSourceImageDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="saveIconDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>203, 17</value>
   </metadata>
-  <data name="WizardForm1.IconOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <metadata name="saveMipmapDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>337, 17</value>
+  </metadata>
+  <data name="WizardForm.IconOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEbSURBVDhPtZPLSsNAGIWz9Tl8Am2XLsTLXjFuBB+gtBtB
-        3VfQlTFeqIoXqAheKEhxoQSlgvgENs4/48P0OBP+kJb8pnXhgY+BzHdOsonXHyIqEXWnJXx/bYy13xPH
-        nz2lYkjMLlejoSNSMWXOrw0fkYoplY2dhM16GLGej1SUYD0fSZZgPR93eX3fRtBoiri7/x8YBdYHMxHS
-        1uqVxig4l2tZyoF5K4cGjtodwb/UCJ4UFs41du250tTJXYJ1uZalf+D0ReEwUli80Nh+VKjcaJy9qr8N
-        hM8K6y3Cvj3rbcKJfVY8sGc6qbBk3zzTMKjeEqaOjP0Cwvwxlx3W5VqWyYPv8dZ7t/fw8YUinONcrg2m
-        6HfOoBLrNp73A6EZ88l4UyBLAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vgAADr4B6kKxwAAAARtJREFUOE+1k8tKw0AYhbP1OXwCbZcuxMteMW4EH6C0G0HdV9CVMV6oiheoCF4o
+        SHGhBKWC+AQ2zj/jw/Q4E/6QlvymdeGBj4HMd06yidcfIioRdaclfH9tjLXfE8efPaViSMwuV6OhI1Ix
+        Zc6vDR+RiimVjZ2EzXoYsZ6PVJRgPR9JlmA9H3d5fd9G0GiKuLv/HxgF1gczEdLW6pXGKDiXa1nKgXkr
+        hwaO2h3Bv9QInhQWzjV27bnS1MldgnW5lqV/4PRF4TBSWLzQ2H5UqNxonL2qvw2EzwrrLcK+Pettwol9
+        VjywZzqpsGTfPNMwqN4Spo6M/QLC/DGXHdblWpbJg+/x1nu39/DxhSKc41yuDabod86gEus2nvcDoRnz
+        yXhTIEsAAAAASUVORK5CYII=
 </value>
   </data>
 </root>
